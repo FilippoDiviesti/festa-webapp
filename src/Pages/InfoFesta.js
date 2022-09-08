@@ -121,9 +121,6 @@ function InfoFesta () {
 
         const myProgressBar = document.querySelector(".progress");
         const myProgressBar2 = document.querySelector(".progress2");
-
-        console.log(myProgressBar);
-        console.log(info)
       
         /* Example */
         updateProgressBar(myProgressBar, info[0]);
@@ -149,18 +146,18 @@ function InfoFesta () {
                     <div className="bardiv1">
                         <p className="pmt">Utenti che hanno pagato ({count[0]}/{count[2]})</p>
 
-                        <div class="progress">
-                            <div class="progress__fill"></div>
-                            <span class="progress__text">0%</span>
+                        <div className="progress">
+                            <div className="progress__fill"></div>
+                            <span className="progress__text">0%</span>
                         </div>
                     </div>
 
                     <div className="bardiv2">
                         <p className="pmt">Utenti che sono entrati ({count[1]}/{count[2]})</p>
 
-                        <div class="progress2">
-                            <div class="progress__fill"></div>
-                            <span class="progress__text">0%</span>
+                        <div className="progress2">
+                            <div className="progress__fill"></div>
+                            <span className="progress__text">0%</span>
                         </div>
                     </div>
                 </div>
