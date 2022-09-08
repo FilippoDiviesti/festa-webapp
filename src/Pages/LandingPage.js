@@ -4,6 +4,14 @@ import videoBg from '../media/file.mp4'
 import Button from '@mui/material/Button';
 import axios from 'axios';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
+import Grid from '@mui/material/Unstable_Grid2';
+import { styled } from '@mui/material/styles';
+import Paper from '@mui/material/Paper';
+import Box from '@mui/material/Box';
+
+
+
+
 
 
 function LandingPage () {
@@ -21,6 +29,18 @@ function LandingPage () {
         }
         ciccio();
     }, [])
+
+
+
+    const Item = styled(Paper)(({ theme }) => ({
+        backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+        ...theme.typography.body2,
+        padding: theme.spacing(1),
+        textAlign: 'center',
+        color: theme.palette.text.secondary,
+    }));
+
+
 
     return(
 
@@ -62,29 +82,36 @@ function LandingPage () {
             <div style={{marginBottom:'3vh', textAlign:'center', display:'flex', flexDirection:'column', alignItems:'center', width:'100%'}}>
                 <h1 className="titolo"><strong>Info</strong></h1>
 
-                <div style={{marginBottom:'3vh', textAlign:'center', display:'flex', flexDirection:'row', alignItems:'center', width:'100%', justifyContent:'center'}}>
-                    <div style={{marginRight:'1vw'}} className="box">
-                        <h1 style={{fontSize:'3.5vh'}}>DATA</h1>
-                        <p style={{fontSize:'4vh', color:'black', marginTop:'-1vh'}}>22/10/2022</p>
-                    </div>
-                    <div style={{marginLeft:'1vw'}} className="box">
-                        <h1 style={{fontSize:'3.5vh'}}>PREZZO</h1>
-                        <p style={{fontSize:'4vh', color:'black', marginTop:'-1vh'}}>€15/persona</p>
-                    </div>
-                </div>
+                <Box sx={{ width: '54vh' }}>
+                    <Grid container spacing={3}>
+                        <Grid xs={6} md={6}>
+                            <Item>
+                                <h1 style={{fontSize:'3.5vh'}}>DATA</h1>
+                                <p style={{fontSize:'3vh', color:'black', marginTop:'-1vh'}}>22/10/2022</p>
+                            </Item>
+                        </Grid>
+                        <Grid xs={6} md={6}>
+                            <Item>
+                                <h1 style={{fontSize:'3.5vh'}}>PREZZO</h1>
+                                <p style={{fontSize:'3vh', color:'black', marginTop:'-1vh'}}>€15/persona</p>
+                            </Item>
+                        </Grid>
+                        <Grid xs={6} md={6}>
+                            <Item>
+                                <h1 style={{fontSize:'3.5vh'}}>DRESSCODE</h1>
+                                <p style={{fontSize:'3vh', color:'black', marginTop:'-1vh'}}>No</p>
+                            </Item>
+                        </Grid>
+                        <Grid xs={6} md={6}>
+                            <Item>
+                                <h1 style={{fontSize:'3.5vh'}}>MAX POSTI</h1>
+                                <p style={{fontSize:'3vh', color:'black', marginTop:'-1vh'}}>150</p>
+                            </Item>
+                        </Grid>
+                    </Grid>
+                </Box>
 
-                <div style={{marginBottom:'4vh', textAlign:'center', display:'flex', flexDirection:'row', alignItems:'center', width:'100%', justifyContent:'center'}}>
-                    <div style={{marginRight:'4vw'}} className="box">
-                        <h1 style={{fontSize:'3.5vh'}}>DRESSCODE</h1>
-                        <p style={{fontSize:'4vh', color:'black', marginTop:'-1vh'}}>X</p>
-                    </div>
-                    <div style={{marginLeft:'-2vw'}} className="box">
-                        <h1 style={{fontSize:'3.5vh'}}>MAX POSTI</h1>
-                        <p style={{fontSize:'4vh', color:'black', marginTop:'-1vh'}}>150</p>
-                    </div>
-                </div>
-
-                <div className="box" style={{width:'40vw', minWidth:300}}>
+                <div className="box" style={{width:'40vw', minWidth:300, marginTop:'4vh'}}>
                     <h1 style={{fontSize:'3.5vh'}}>DESCRIZIONE</h1>
                     <p style={{fontSize:'3vh', color:'black', marginTop:'-1vh'}}>Festa con il costo di entrata di €15 a persona con free drink. Ci saranno barman, DJ e fotografo. Posti limitati (chi prima arriva meglio alloggia).</p>
                 </div>
