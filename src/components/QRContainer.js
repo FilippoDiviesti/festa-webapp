@@ -82,13 +82,11 @@ class QRContainer extends Component{
 
 
 
-        // constraints={window.innerWidth > 768 ? undefined : {video: {facingMode: { exact: 'environment' }}}}
-
 
         return(
             <React.Fragment>
                 <div style={camStyle}>
-                    <QrReader delay = {100} style={previewstyle} onError = {this.handleError} onScan={this.handleScan} />
+                    <QrReader constraints={window.innerWidth > 768 ? undefined : {video: {facingMode: { exact: 'environment' }}}} delay = {100} style={previewstyle} onError = {this.handleError} onScan={this.handleScan} />
                 </div>
 
                 

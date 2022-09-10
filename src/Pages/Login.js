@@ -47,7 +47,7 @@ function Login () {
         <div>
 
             <Box onSubmit={loginFunc} component='form' sx={{marginTop: '-3vh' ,display: 'flex', flexDirection: 'column', alignItems: 'center',}}>
-                <h1 className="titolo"><strong>Festa</strong></h1>
+                <h1 className="titolo"><strong>LED PARTY</strong></h1>
 
                 <div className="subtitolo">
                     <p style={{fontWeight: 600, fontSize:'5vh'}}>Login</p>
