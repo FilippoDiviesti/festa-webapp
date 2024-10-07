@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/festa-webapp/static/css/main.63bf2205.css",
+    "main.js": "/festa-webapp/static/js/main.d9205783.js",
+    "static/media/file.mp4": "/festa-webapp/static/media/file.eee0961206ee1fa467a3.mp4",
+    "static/media/logo.png": "/festa-webapp/static/media/logo.e8ba62b28d34fb24217e.png",
+    "index.html": "/festa-webapp/index.html",
+    "main.63bf2205.css.map": "/festa-webapp/static/css/main.63bf2205.css.map",
+    "main.d9205783.js.map": "/festa-webapp/static/js/main.d9205783.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63bf2205.css",
+    "static/js/main.d9205783.js"
+  ]
+}
