@@ -1,6 +1,7 @@
 {
   "name": "festa-webapp",
   "version": "0.1.0",
+  "homepage": "https://filippodiviesti.github.io/festa-webapp/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",
@@ -27,8 +28,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "homepage": "https://filippodiviesti.github.io/festa-webapp/"
   },
   "eslintConfig": {
@@ -48,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
